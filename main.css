@@ -26,6 +26,10 @@ p {
     text-align: center;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 .header {
     background: -webkit-linear-gradient(bottom right, rgba(56,73,87,0.8) 0%, #384957 100%);
     background: -o-linear-gradient(bottom right, rgba(56,73,87,0.8) 0%, #384957 100%);
@@ -65,9 +69,55 @@ h1 {
 
 
 .newsletter-section {
+    background-color: #F5F6F7;
     padding: 30px 10px;
 }
 
+.newsletter-form {
+    padding-top: 23px;
+}
+
+.newsletter-form input {
+    border: 1px solid #DADADA;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 11px 10px;
+    width: 270px;
+}
+
+.newsletter-form button {
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    background-color: #FCCE8E;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 5px;
+    padding: 11px 10px;
+    width: 79px;
+}
+
+.image-section-content {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    justify-content: center;
+    height: 100vh;
+}
+
+.image-section-content .large {
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+.image-section-content .small {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
 
 /* Tablet and below */
 @media screen and (max-width: 1099px) {
