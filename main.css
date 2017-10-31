@@ -1,9 +1,25 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
     margin: 0;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 p {
@@ -30,12 +46,12 @@ p {
     text-transform: uppercase;
 }
 
-.header {
+.header-section {
     background: -webkit-linear-gradient(bottom right, rgba(56,73,87,0.8) 0%, #384957 100%);
     background: -o-linear-gradient(bottom right, rgba(56,73,87,0.8) 0%, #384957 100%);
     background: linear-gradient(to top left, rgba(56,73,87,0.8) 0%, #384957 100%);
     color: #FFFFFF;
-    padding: 60px 10px 0;
+    padding: 60px 16px 0;
     position: relative;
     text-align: center;
 }
@@ -47,7 +63,7 @@ p {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 34px;
     font-weight: 300;
     margin-top: 0;
 }
@@ -97,15 +113,23 @@ h1 {
     width: 79px;
 }
 
-.image-section-content {
-    background-repeat: no-repeat;
+.image-section {
+    background-attachment:fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-section-content {
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     color: #FFFFFF;
     justify-content: center;
     height: 100vh;
+    padding: 0 16px;
 }
 
 .image-section-content .large {
@@ -119,9 +143,159 @@ h1 {
     margin-top: 30px;
 }
 
+.explanation-section {
+    font-size: 16px;
+    padding: 30px 16px;
+}
+
+.testimonials-section {
+    padding: 30px 16px;
+    text-align: center;
+}
+
+.testimonials-container {
+    display: inline-block;
+    margin: auto;
+    max-width: 100%;
+}
+
+.testimonial {
+    display: inline-block;
+    font-size: 15px;
+    padding: 40px 30px 60px 40px;
+    text-align: left;
+    height: 355px;
+    margin-right: -4px;
+    max-width: 298px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.testimonial .lora {
+    line-height: 23px;
+}
+
+.reference {
+    bottom: 0;
+    left: 0;
+    color: #141413;
+    font-size: 12px;
+    padding: 65px 10px 60px 132px;
+    position: absolute;
+}
+
+.testimonial1 {
+    background-color: #F5F6F7;
+}
+
+.testimonial2{
+    background-color: #EFF0F1;
+}
+
+.partners {
+    margin : 90px 0 70px;
+}
+
+.footer-section {
+    background-color: #F5F6F7;
+    padding: 18px 16px 25px;
+    position: relative;
+    text-align: center;
+}
+
+.footer-section a {
+    color: #000000;
+}
+
+.social-links {
+    bottom: 0;
+    font-size: 24px;
+    padding: 20px 0;
+    position: absolute;
+    right: 126px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-left: 14px;
+    vertical-align: middle;
+}
+
+a.linkedin {
+    color: #1363A2;
+}
+
+a.twitter {
+    color: #42A3EE;
+}
+
+a.medium {
+    color: #1D9D5B;
+    font-size: 20px;
+}
+
 /* Tablet and below */
 @media screen and (max-width: 1099px) {
     .logo {
-        position: relative;
+        position: static;
+        left: 0;
+    }
+
+    .social-links {
+        position: static;
+        right: 0;
+    }
+
+    .explanation-section p {
+        margin: auto;
+        max-width: 650px;
+    }
+
+    .explanation-section p.light {
+        max-width: 550px;
+    }
+
+    .explanation-section p br {
+        display: none;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 699px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .header-section {
+        padding-top: 20px;
+    }
+
+    .logo {
+        margin-bottom: 24px;
+    }
+
+    .header-text img {
+        margin: 26px 0 30px;
+    }
+
+    .header-text p,
+    .newsletter-section,
+    .newsletter-form input,
+    .newsletter-form button,
+    .explanation-section {
+        font-size: 12px;
+    }
+
+    .newsletter-form input {
+        width: 170px;
+    }
+
+    .testimonial {
+        font-size: 12px;
+        height: 288px;
+    }
+
+    .testimonial .lora {
+        line-height: 20px;
     }
 }
