@@ -114,10 +114,26 @@ h1 {
 }
 
 .image-section {
-    background-attachment:fixed;
+    position: relative;
+}
+
+.video-div {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.video-div video {
+    min-height: 100vh;
+}
+
+.image-section-text-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 .image-section-content {
