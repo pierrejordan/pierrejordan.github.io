@@ -127,6 +127,7 @@ h1 {
 
 .video-div video {
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 .image-section-text-wrapper {
