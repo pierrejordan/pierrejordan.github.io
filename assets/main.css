@@ -130,6 +130,35 @@ h1 {
     min-width: 100vw;
 }
 
+.progress-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    margin-left: -5px;
+}
+
+.progress-step {
+    width: 10px;
+    height: 1px;
+    background-color: rgba(255,255,255,.35);
+    margin-bottom: 3px;
+}
+
+.progress-step.active {
+    background-color: #FFFFFF;
+    height: 2px;
+    margin-top: -1px;
+}
+
 .image-section-text-wrapper {
     position: absolute;
     left: 0;
@@ -147,6 +176,12 @@ h1 {
     justify-content: center;
     height: 100vh;
     padding: 0 16px;
+    min-width: 100vw;
+}
+
+.perforations-area {
+    background-color: rgba(255, 255, 255, 0.1);
+    background-blend-mode: multiply;
 }
 
 .image-section-content .large {
