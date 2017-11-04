@@ -114,6 +114,7 @@ h1 {
 }
 
 .image-section {
+    overflow: hidden;
     position: relative;
 }
 
@@ -123,6 +124,10 @@ h1 {
     background-size: cover;
     min-height: 100vh;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .video-div video {
@@ -156,7 +161,6 @@ h1 {
 .progress-step.active {
     background-color: #FFFFFF;
     height: 2px;
-    margin-top: -1px;
 }
 
 .image-section-text-wrapper {
@@ -177,6 +181,7 @@ h1 {
     height: 100vh;
     padding: 0 16px;
     min-width: 100vw;
+    max-width: 100vw;
 }
 
 .perforations-area {
