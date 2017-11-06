@@ -95,10 +95,28 @@ h1 {
     background-color: #F1F1F1;
     font-size: 16px;
     padding: 30px 10px;
+    position: relative;
 }
 
 .newsletter-form {
     padding-top: 23px;
+}
+
+.mc-field-group {
+    display: inline-block;
+}
+
+#mc_embed_signup div.mce_inline_error {
+    background-color: transparent !important;
+    bottom: -15px;
+    color: red !important;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.response {
+    padding-bottom: 8px;
 }
 
 .newsletter-form input {
