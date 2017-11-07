@@ -68,7 +68,7 @@ p {
 }
 
 h1 {
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 300;
     margin-top: 0;
 }
@@ -263,8 +263,8 @@ h1 {
 
 .testimonial {
     display: inline-block;
-    font-size: 15px;
-    padding: 40px 30px 60px 40px;
+    font-size: 14px;
+    padding: 40px 20px 60px 40px;
     text-align: left;
     height: 355px;
     margin-right: -4px;
@@ -372,7 +372,7 @@ a.medium {
 /* mobile */
 @media screen and (max-width: 699px) {
     h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .header-section {
@@ -393,6 +393,7 @@ a.medium {
     .newsletter-form button,
     .explanation-section {
         font-size: 12px;
+        line-height: 16px;
     }
 
     .newsletter-form input {
